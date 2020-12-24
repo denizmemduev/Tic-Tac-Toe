@@ -3,26 +3,36 @@
   padding: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   box-sizing: border-box;
+  user-select: none;
 }
 body {
   width: 100%;
-  height: 100vh;
+
+  background-color: rgb(121, 121, 121);
+}
+.body {
+  width: 100%;
+  height: 68vh;
   background-color: rgb(121, 121, 121);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
 .mainbox {
   width: 500px;
   height: 500px;
-  border: 5px solid black;
+
   overflow: unset;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: black;
+
+  border-radius: 10px;
+  overflow: hidden;
 }
 .box {
   width: 33%;
@@ -35,4 +45,62 @@ body {
   flex-wrap: wrap;
   font-size: 100px;
   background-color: white;
+}
+
+button {
+  margin: 10px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(77, 77, 77);
+  color: white;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #1db954;
+  color: rgb(0, 0, 0);
+}
+
+.headr {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(77, 77, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#x {
+  width: 33.3%;
+  height: 100%;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+}
+#o {
+  width: 33.3%;
+  height: 100%;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+}
+h1 {
+  width: 33.3%;
+  height: 100%;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
