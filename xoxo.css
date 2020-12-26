@@ -1,0 +1,310 @@
+@font-face {
+  src: url(fonts/IndieFlower-Regular.ttf);
+  font-family: IndieFlower-Regular;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(121, 121, 121);
+  }
+  .body {
+    width: 40%;
+    height: 680px;
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mainbox {
+    width: 440px;
+    height: 440px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: IndieFlower-Regular;
+    transition: 0.5s;
+    box-shadow: 0px 0px 35px 1px #0000004b;
+  }
+
+  .box {
+    width: 33.33%;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 80px;
+    background-color: rgb(121, 121, 121);
+    color: black;
+    transition: 0.5s;
+    font-family: IndieFlower-Regular;
+  }
+  .box:hover {
+    cursor: pointer;
+  }
+
+  button {
+    margin: 10px;
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    transition: 0.3s;
+    outline: none;
+  }
+  button:hover {
+    background-color: #3a3a3a;
+  }
+
+  .headr {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-image: url(xoxx.jpg);
+    background-size: cover;
+    text-shadow: 0px 13px 8px black;
+  }
+
+  #o {
+    position: relative;
+    height: 70px;
+    transition: 0.5s;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    opacity: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h1 {
+    width: 100%;
+
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  [value="0"] {
+    border-bottom: 2px solid rgba(0, 0, 0);
+  }
+
+  [value="1"] {
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  [value="2"] {
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+
+  [value="3"] {
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+
+  [value="4"] {
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+
+  [value="5"] {
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  [value="7"] {
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+  }
+  #logout {
+    height: 60px;
+    width: 60px;
+    transition: 0.5s;
+  }
+  #logout:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(121, 121, 121);
+  }
+  .body {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mainbox {
+    width: 90%;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: IndieFlower-Regular;
+    transition: 0.5s;
+    box-shadow: 0px 0px 35px 1px #0000004b;
+  }
+
+  .box {
+    width: 33.33%;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 80px;
+    background-color: rgb(121, 121, 121);
+    color: black;
+    transition: 0.5s;
+    font-family: IndieFlower-Regular;
+  }
+  .box:hover {
+    cursor: pointer;
+  }
+
+  button {
+    margin: 10px;
+    width: 210px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    transition: 0.3s;
+    outline: none;
+  }
+  button:hover {
+    background-color: #3a3a3a;
+  }
+
+  .headr {
+    width: 100%;
+    height: 160px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-image: url(3191594.jpg);
+    background-size: cover;
+    text-shadow: 0px 13px 8px black;
+  }
+
+  #o {
+    position: relative;
+    height: 70px;
+    transition: 0.5s;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    opacity: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h1 {
+    width: 100%;
+
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  [value="0"] {
+    border-bottom: 2px solid rgba(0, 0, 0);
+  }
+
+  [value="1"] {
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  [value="2"] {
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+
+  [value="3"] {
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+
+  [value="4"] {
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+
+  [value="5"] {
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  [value="7"] {
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+  }
+  #logout {
+    height: 60px;
+    width: 60px;
+    transition: 0.5s;
+  }
+  #logout:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+  }
+}
